@@ -13,4 +13,6 @@ function testEven(n) {
     }else {
       return false;
     }
+  // another way of solving it
+  return !(n%2)
 }
