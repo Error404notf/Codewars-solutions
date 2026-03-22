@@ -9,4 +9,5 @@ String.prototype.isUpperCase = function() {
   }else {
     return false;
   }
+  return this == this.toUpperCase();
 }
