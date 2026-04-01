@@ -8,4 +8,14 @@ String.prototype.toAlternatingCase = function () {
   // check if uppercase to lowercase
   // if lowercase change to uppercase
   return this.split('').map( ac => ac === ac.toUpperCase() ? ac.toLowerCase():ac.toUpperCase()).join('')
+  
+  let newstr = ''
+  for(let i =0; i< this.length; i++){
+    if(this[i] === this[i].toUppercase()){
+      newstr += this.toLowerCase()
+    }else {
+      newstr += this.toUpperCase()
+    }
+  }
+  return newstr;
 }
