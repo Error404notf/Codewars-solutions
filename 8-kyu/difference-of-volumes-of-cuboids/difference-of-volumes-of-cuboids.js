@@ -11,4 +11,7 @@ function findDifference(a, b) {
   let highestNumber = Math.max(volume,volumeTwo)
   let lowestNumber = Math.min(volume,volumeTwo)
   return highestNumber - lowestNumber;
+  
+  //or
+  return Math.abs(a.reduce((a,b)=> a * b) - b.reduce((c,d)=> c * d))
 }
