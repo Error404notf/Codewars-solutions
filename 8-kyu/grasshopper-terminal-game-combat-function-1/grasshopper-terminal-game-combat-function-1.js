@@ -5,10 +5,12 @@ function combat(health, damage) {
   //Pseudocode 
   // currenthealth = health - damage 
   // if current health is < 0 == health cannot go below 0
-  let currentHealth = health - damage 
-  if(currentHealth < 0){
-    return 0 
-  }else{
-    return currentHealth;
-  }
+//   let currentHealth = health - damage 
+//   if(currentHealth < 0){
+//     return 0 
+//   }else{
+//     return currentHealth;
+//   }
+  //Or use this implementation
+  return Math.max(health - damage , 0)
 }
